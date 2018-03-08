@@ -110,6 +110,8 @@ header {
 
 .portfolio-link {
     padding: 0px 5px;
+    /* Keeping the link from overflowing the parent element in Chrome */
+    overflow-wrap: break-word;
 }
 
 .img-attribution {
