@@ -1,0 +1,190 @@
+body {
+    font-family: "Exo 2", sans-serif;
+    color: #2d3c49;
+}
+
+header,
+main,
+footer {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+main,
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jumbotron-section,
+.main-content {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+
+/*** Header styling ***/
+
+header {
+    height: 100px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.logo-image {
+    width: 20%;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.logo-image img {
+    width: 85px;
+    height: 85px;
+}
+
+.header-text {
+    width: 80%;
+    font-weight: 200;
+    text-align: right;
+}
+
+.header-text h1 {
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    margin-top: 0;
+}
+
+
+/*** Content styling ***/
+
+.jumbotron-section {
+    margin-bottom: 15px;
+}
+
+.jumbotron-img {
+    margin: 0;
+}
+
+.jumbotron-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content h2 {
+    width: 100%;
+    color: #7d97ad;
+    font-weight: 400;
+}
+
+.portfolio-section {
+    width: 33.333333%;
+}
+
+.portfolio-img {
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+.portfolio-section h3,
+.portfolio-link {
+    text-align: center;
+}
+
+.portfolio-link {
+    padding: 0px 5px;
+}
+
+.img-attribution {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+
+/*** Footer styling ***/
+
+footer {
+    text-align: center;
+    border-top: 1px solid #7d97ad;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+footer p:nth-child(2) {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.octocat-icon,
+.octocat-icon a,
+.octocat-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*** Responsive stylings ***/
+
+@media screen and (min-width: 850px) {
+    header,
+    main,
+    footer {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .header-text h1 {
+        font-size: 1.7em;
+    }
+
+    .portfolio-section {
+        width: 100%;
+    }
+
+    .portfolio-img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .main-content h2 {
+        text-align: center;
+    }
+
+    .portfolio-section h3 {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .portfolio-link {
+        margin-top: 5px;
+        margin-bottom: 35px;
+    }
+}
